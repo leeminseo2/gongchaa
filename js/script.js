@@ -18,7 +18,7 @@ $(function () {
     loop: true,
 
     spaceBetween: 20,
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     // centeredSlides: true,
     // Navigation arrows
     navigation: {

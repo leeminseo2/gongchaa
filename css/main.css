@@ -360,6 +360,8 @@ h4 {
   /* overflow: hidden; */
   margin-top: 7rem;
   position: relative;
+  padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .new-slider-wrap .swiper-slide {
@@ -388,13 +390,12 @@ h4 {
 .new-slider-wrap .swiper-slide .news-item-con {
   width: 0;
   opacity: 0;
+  transition: width 0.4s;
 }
 .new-slider-wrap .swiper-slide-active .news-item-con {
   width: 360px;
-  /* width: 0;
-  opacity: 0; */
-
   opacity: 1;
+  transition: opacity 0.4s 0.4s;
 }
 .new-slider-wrap .swiper-slide .news-item-con h5 {
   font-size: 36px;
@@ -436,6 +437,26 @@ h4 {
   max-width: none;
   min-height: 100%;
 }
+
+.new-slider .new-button-prev {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background: #f00;
+  z-index: 10;
+}
+.new-slider .new-button-next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background: #00f;
+  z-index: 10;
+}
+
 /* 스토어 */
 .store {
   width: 100%;
